@@ -45,6 +45,13 @@
     <Compile Include="Message\MailNotificationMessage.cs" />
     <Compile Include="Message\EmailStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\NotifierRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Notifier.DataAccess\Notifier.DataAccess.csproj">
+      <Project>{83211d2c-797d-43e7-91e2-e2e3c0475049}</Project>
+      <Name>Notifier.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
