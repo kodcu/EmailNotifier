@@ -15,6 +15,7 @@ namespace Notifier.Message
         public string Cc { get; set; }
         public string Bcc { get; set; }
         public string Body { get; set; }
+
         public EmailStatus Status { get; set; }
         public bool IsHtml { get; set; }
     }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Notifier.Repository
 {
-    public class NotifierRepository
+    public class NotificationRepository
         :BaseRepository<IMessage>
     {
        

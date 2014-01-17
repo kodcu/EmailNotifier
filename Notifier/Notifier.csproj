@@ -39,13 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NotificationController.cs" />
+    <Compile Include="EnvironmentConstants.cs" />
+    <Compile Include="Extention\EmailExtention.cs" />
     <Compile Include="Message\IMessage.cs" />
     <Compile Include="Message\BaseMessage.cs" />
     <Compile Include="Message\NotificationMessage.cs" />
     <Compile Include="Message\MailNotificationMessage.cs" />
     <Compile Include="Message\EmailStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\NotifierRepository.cs" />
+    <Compile Include="Repository\NotificationRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Notifier.DataAccess\Notifier.DataAccess.csproj">
