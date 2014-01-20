@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notifier.Server.WindowsService
+namespace Notifier.Server.WindowsController
 {
     static class Program
     {

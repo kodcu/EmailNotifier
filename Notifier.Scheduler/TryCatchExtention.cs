@@ -12,15 +12,16 @@ namespace Notifier.Scheduler
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-        public static void TryCatch(this Action action) 
+        public static void WithTryCatch(this Object theClass , Action theMethod) 
         {
             try
             {
-                action.Invoke();
+                theMethod.Invoke();
             }
             catch (Exception ex)
             {
-                log.Error("Error : {0} " + ex.Message);
+                string msg = String.Format("Class : {0} - Method : {1} - Error : {2} ", theClass.GetType().Name, theMethod.Method.Name, ex.Message);
+                log.Error(msg);
                 throw new ApplicationException("");
             }  
         }

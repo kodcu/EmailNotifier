@@ -12,7 +12,7 @@ namespace Notifier.Scheduler
 {
     public interface INotifierJobExecuter
     {
-        void ScheduleIt<TJob>(string CronExpression, 
+        void ScheduleIt(string CronExpression, 
                               string jobKey = null,
                               string jobGroupKey = null,
                               string triggerKey = null,
@@ -42,12 +42,14 @@ namespace Notifier.Scheduler
         
         public virtual void StartJob()
         {
-            this.scheduler.Start();           
+            //this.scheduler.Start();
+            this.scheduler.WithTryCatch(scheduler.Start);         
         }
 
         public virtual void StopJob()
         {
-            this.StopJob();
+            //this.scheduler.Shutdown();
+            this.scheduler.WithTryCatch(scheduler.Shutdown);
         }
 
         public abstract void ScheduleIt(string CronExpression,
@@ -73,6 +75,7 @@ namespace Notifier.Scheduler
 
     public class NotifierJobExecuter<TJob>
         : BaseNotifierJobExecuter<TJob>
+         where TJob : IJob
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -121,15 +124,6 @@ namespace Notifier.Scheduler
                 log.Error("");
                 throw new ApplicationException("");
             }            
-        }
-    }
-
-    public class NotifierJob
-       : IJob
-    {
-        public void Execute(IJobExecutionContext context)
-        {
-            Console.WriteLine("OK");
         }
     }
 }

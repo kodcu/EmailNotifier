@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Quartz, Version=2.2.1.400, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External-Bin\Quartz.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NotifierJob.cs" />
     <Compile Include="CronExpressionMaker.cs" />
     <Compile Include="NotificationController.cs" />
     <Compile Include="EnvironmentConstants.cs" />
@@ -56,6 +61,13 @@
       <Project>{83211d2c-797d-43e7-91e2-e2e3c0475049}</Project>
       <Name>Notifier.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Notifier.Scheduler\Notifier.Scheduler.csproj">
+      <Project>{30939d0c-5bd5-4789-b52c-11cf34ab91de}</Project>
+      <Name>Notifier.Scheduler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="External-Bin\Quartz.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

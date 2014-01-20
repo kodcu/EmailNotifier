@@ -1,4 +1,4 @@
-﻿namespace Notifier.Server.WindowsService
+﻿namespace Notifier.Server.WindowsController
 {
     partial class Service1
     {
