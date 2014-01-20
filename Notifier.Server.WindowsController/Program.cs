@@ -17,7 +17,7 @@ namespace Notifier.Server.WindowsController
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
-                new Service1() 
+                new NotifierController() 
             };
             ServiceBase.Run(ServicesToRun);
         }

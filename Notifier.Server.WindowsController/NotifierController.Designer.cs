@@ -1,6 +1,6 @@
 ﻿namespace Notifier.Server.WindowsController
 {
-    partial class Service1
+    partial class NotifierController
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.ServiceName = "NotifierController";
         }
 
         #endregion
