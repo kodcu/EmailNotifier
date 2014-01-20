@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifier.Scheduler", "Notif
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifier", "Notifier\Notifier.csproj", "{AD474A8E-35E4-4307-B16A-93780E10BE16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifier.Server.WindowsService", "Notifier.Server.WindowsService\Notifier.Server.WindowsService.csproj", "{F6886C50-87DC-4DA9-99F6-6D41ED08340A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifier.Server.WebService", "Notifier.Server.WebService\Notifier.Server.WebService.csproj", "{03034FE8-B485-44FB-A540-C7CD0E71A977}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{D522A87E-A0BD-431E-968B-CA108AE0FABB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,8 +31,20 @@ Global
 		{AD474A8E-35E4-4307-B16A-93780E10BE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD474A8E-35E4-4307-B16A-93780E10BE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD474A8E-35E4-4307-B16A-93780E10BE16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6886C50-87DC-4DA9-99F6-6D41ED08340A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6886C50-87DC-4DA9-99F6-6D41ED08340A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6886C50-87DC-4DA9-99F6-6D41ED08340A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6886C50-87DC-4DA9-99F6-6D41ED08340A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03034FE8-B485-44FB-A540-C7CD0E71A977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03034FE8-B485-44FB-A540-C7CD0E71A977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03034FE8-B485-44FB-A540-C7CD0E71A977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03034FE8-B485-44FB-A540-C7CD0E71A977}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03034FE8-B485-44FB-A540-C7CD0E71A977} = {D522A87E-A0BD-431E-968B-CA108AE0FABB}
+		{F6886C50-87DC-4DA9-99F6-6D41ED08340A} = {D522A87E-A0BD-431E-968B-CA108AE0FABB}
 	EndGlobalSection
 EndGlobal

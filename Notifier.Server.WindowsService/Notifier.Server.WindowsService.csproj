@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AD474A8E-35E4-4307-B16A-93780E10BE16}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{F6886C50-87DC-4DA9-99F6-6D41ED08340A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Notifier</RootNamespace>
-    <AssemblyName>Notifier</AssemblyName>
+    <RootNamespace>Notifier.Server.WindowsService</RootNamespace>
+    <AssemblyName>Notifier.Server.WindowsService</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -36,26 +38,21 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CronExpressionMaker.cs" />
-    <Compile Include="NotificationController.cs" />
-    <Compile Include="EnvironmentConstants.cs" />
-    <Compile Include="Extention\EmailExtention.cs" />
-    <Compile Include="Message\IMessage.cs" />
-    <Compile Include="Message\BaseMessage.cs" />
-    <Compile Include="Message\NotificationMessage.cs" />
-    <Compile Include="Message\MailNotificationMessage.cs" />
-    <Compile Include="Message\EmailStatus.cs" />
+    <Compile Include="Service1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service1.Designer.cs">
+      <DependentUpon>Service1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\NotificationRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Notifier.DataAccess\Notifier.DataAccess.csproj">
-      <Project>{83211d2c-797d-43e7-91e2-e2e3c0475049}</Project>
-      <Name>Notifier.DataAccess</Name>
-    </ProjectReference>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
