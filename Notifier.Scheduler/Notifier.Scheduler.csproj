@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseNotifierJobExecuter.cs" />
+    <Compile Include="INotifierJobExecuter.cs" />
     <Compile Include="NotifierJobExecuter.cs" />
     <Compile Include="TryCatchExtention.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
