@@ -29,17 +29,14 @@ namespace Notifier
                 catch (Exception)
                 {
                     controldummy = false;
-
-                    item.Status = EmailStatus.ERROR;
-                    item.TryCount++;
-                    repository.UpdateDocument(item);
+                    item.Status = EmailStatus.ERROR;                    
                 }
 
                 if (controldummy)
-                {
                     item.Status = EmailStatus.SEND;
-                    item.TryCount++;
-                }
+
+                item.TryCount++;
+                repository.UpdateDocument(item);
             }
         }
     }

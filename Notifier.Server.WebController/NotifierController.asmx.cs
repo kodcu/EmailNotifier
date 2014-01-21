@@ -26,7 +26,7 @@ namespace Notifier.Server.WebController
         public void ScanRecords()
         {
             string infoMsg = String.Format("Date : {0} Time : {1}", DateTime.Now.ToLongTimeString(), DateTime.Now.ToLongTimeString());
-            log.Info(infoMsg + " REQUESTED");
+            log.Info(infoMsg + " REQUESTED BY WEB SERVICE");
 
             try
             {
@@ -38,7 +38,7 @@ namespace Notifier.Server.WebController
                 log.Error("" + ex.Message.ToString());
             }
 
-            log.Info(infoMsg + " RESPONDED");
+            log.Info(infoMsg + " RESPONDED BY WEB SERVICE");
         }
     }
 }
