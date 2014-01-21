@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Notifier.NotificationController">
+    <Position X="9.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NotificationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notifier.NotifierJob">
+    <Position X="8" Y="1.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NotifierJob.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Notifier.Repository.NotificationRepository" Collapsed="true">
+    <Position X="9" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\NotificationRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notifier.Message.BaseMessage" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAACAAkAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Message\BaseMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Notifier.Message.NotificationMessage">
+    <Position X="5.5" Y="3.5" Width="1.75" />
+    <InheritanceLine Type="Notifier.Message.BaseMessage" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="3.062" />
+        <Point X="6.25" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAABAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Message\NotificationMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notifier.Message.MailNotificationMessage">
+    <Position X="5.5" Y="6" Width="2" />
+    <InheritanceLine Type="Notifier.Message.NotificationMessage" FixedToPoint="true">
+      <Path>
+        <Point X="6.375" Y="5.117" />
+        <Point X="6.375" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAEAAAAAAAAAIABAAAAAAAIAAAAAAAAAAIAABg=</HashCode>
+      <FileName>Message\MailNotificationMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Notifier.Message.IMessage" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Message\IMessage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Notifier.Message.EmailStatus">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQBAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Message\EmailStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

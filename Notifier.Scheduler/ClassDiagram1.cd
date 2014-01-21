@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Notifier.Scheduler.BaseNotifierJobExecuter&lt;TJob&gt;">
+    <Position X="6.25" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAoAAAAAAACQAQAAAAACAAAAAAAiABACAAEAAAAABA=</HashCode>
+      <FileName>BaseNotifierJobExecuter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Notifier.Scheduler.NotifierJobExecuter&lt;TJob&gt;">
+    <Position X="6.25" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NotifierJobExecuter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notifier.Scheduler.TryCatchExtention">
+    <Position X="9.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TryCatchExtention.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Notifier.Scheduler.INotifierJobExecuter">
+    <Position X="9.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAACAAAAAAEAAAAAAA=</HashCode>
+      <FileName>INotifierJobExecuter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
