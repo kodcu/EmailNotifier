@@ -1,8 +1,11 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/v1i9nmklfv1ot6sp/branch/master?svg=true)]
 (https://ci.appveyor.com/project/yemrekeskin/quartzenterprisescheduler-emailnotification/branch/master)
 
-## QuartzEnterpriseScheduler.EmailNotification
- Email notification as scheduled task
+## Email Notifier
+ Email notification as scheduled task 
+
+## Dependencies
+- [Quartz Job Scheduler](http://www.quartz-scheduler.org/)
 
 ## License
 
