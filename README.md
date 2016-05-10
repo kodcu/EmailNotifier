@@ -1,5 +1,5 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/v1i9nmklfv1ot6sp/branch/master?svg=true)]
-(https://ci.appveyor.com/project/yemrekeskin/quartzenterprisescheduler-emailnotification/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/npuxyfox8t7spt0e/branch/master?svg=true)]
+(https://ci.appveyor.com/project/yemrekeskin/emailnotifier/branch/master)
 
 ## Email Notifier
  Email notification as scheduled task 
